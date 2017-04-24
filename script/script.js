@@ -8,6 +8,7 @@ var count = 0;
 $(".bttn").on('click', function(event){
   var box = $(this);
   if(box.hasClass(x) || box.hasClass(o)){
+    alert("Already selected. Try another box!");
   }else{
     if(player === 1){
       count ++;
