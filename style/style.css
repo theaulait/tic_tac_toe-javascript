@@ -11,7 +11,7 @@ h1{
 }
 
 form{
-  width: 450px;
+  width: 300px;
   text-align: center;
   border-radius: 10px;
   padding: 20px;
@@ -40,9 +40,8 @@ td{
   border: solid grey 1px;
 }
 
-./* bttn{
+.bttn{
   color: gray;
-  margin: 25px;
   border: solid grey 1px;
   text-align: center;
   background-color: white;
@@ -50,12 +49,6 @@ td{
   width: 100px;
   height: 100px;
   box-shadow: 0 4px rgba(0,0,0,0.2);
-} */
-
-.bttn{
-  width: 100px;
-  height: 100px;
-  background-color: white;
 }
 
 .bttn:hover {
