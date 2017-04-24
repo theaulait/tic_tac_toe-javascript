@@ -44,10 +44,10 @@ form{
   margin: 25px;
 }
 
-.o{
-  font-size: 50px;
+.x{
+  background-color: blue;
 }
 
-.x{
-  font-size: 50px;
+.o{
+  background-color: red;
 }
