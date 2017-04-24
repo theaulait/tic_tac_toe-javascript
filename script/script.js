@@ -15,7 +15,7 @@ $(".bttn").on('click', function(event){
       box.addClass(x);
       box.text(x);
       if(checkWin(x)){
-        alert( "player " + player + " you won!")
+        alert( "player " + player + " you won!");
       }else{
         player = 2;
       }
@@ -25,7 +25,7 @@ $(".bttn").on('click', function(event){
       box.addClass(o);
       box.text(o);
       if(checkWin(o)){
-        alert("player " + player + " you won!")
+        alert("player " + player + " you won!");
       }else{
         player = 1;
       }
