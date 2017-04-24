@@ -1,28 +1,30 @@
 $(document).ready(function(){
 
 var player = 1;
-var x = 'x';
-var o = 'o';
-
+var x = 'X';
+var o = 'O';
+var count = 0;
 
 $(".bttn").on('click', function(event){
-
   var box = $(this);
-
-  if(box.hasClass('x') || box.hasClass('o')){
+  if(box.hasClass(x) || box.hasClass(o)){
   }else{
     if(player === 1){
-      box.addClass('x');
-      if(checkWin('x')){
+      count ++;
+      box.addClass(x);
+      box.text(x);
+      if(checkWin(x)){
         alert( "player " + player + " you won!")
       }else{
         player = 2;
       }
     }
     else{
-      box.addClass('o');
-      if(checkWin('o')){
-        alert(player + "you won!")
+      count ++;
+      box.addClass(o);
+      box.text(o);
+      if(checkWin(o)){
+        alert("player " + player + " you won!")
       }else{
         player = 1;
       }
@@ -71,9 +73,16 @@ function checkWin(letter){
      $('#seven').hasClass(letter)){
     return true;
   }
+  else if(count === 9){
+    alert('This is a draw. Please restart game.');
+  }
   else{
     return false;
   }
 }
+
+$('#restart').on('click', function(){
+  location.reload();
+});
 
 });
