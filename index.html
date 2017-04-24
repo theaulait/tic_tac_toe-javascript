@@ -6,23 +6,32 @@
   <title>Tic Tac Toe</title>
 </head>
 <body>
-<div class="container" id="board">
-  <div class="row" id="row1">
-    <div class="col-md-offset-3 col-md-1" id="box1"></div>
-    <div class="col-md-offset-3 col-md-1" id="box2"></div>
-    <div class="col-md-offset-3 col-md-1" id="box3"></div>
-  </div>
-  <div class="row" id="row2">
-    <div class="col-md-offset-3 col-md-1" id="box4"></div>
-    <div class="col-md-offset-3 col-md-1" id="box5"></div>
-    <div class="col-md-offset-3 col-md-1" id="box6"></div>
-  </div>
-  <div class="row" id="row3">
-    <div class="col-md-offset-3 col-md-1" id="box7"></div>
-    <div class="col-md-offset-3 col-md-1" id="box8"></div>
-    <div class="col-md-offset-3 col-md-1" id="box9"></div>
-  </div>
-</div>
+  <h1>Tic Tac Toe</h1>
+<!-- <div class="container" id="board"> -->
+  <form name="board">
+  <table id="board">
+  <tr>
+    <td><input type="button" class="bttn" id="one"></td>
+    <td><input type="button" class="bttn" id="two"></td>
+    <td><input type="button" class="bttn" id="three"></td>
+  </tr>
+  <tr>
+    <td><input type="button" class="bttn" id="four"></td>
+    <td><input type="button" class="bttn" id="five"></td>
+    <td><input type="button" class="bttn" id="six"></td>
+  </tr>
+  <tr>
+    <td><input type="button" class="bttn" id="seven"></td>
+    <td><input type="button" class="bttn" id="eight"></td>
+    <td><input type="button" class="bttn" id="nine"></td>
+  </tr>
+  </table>
+</form>
+<!-- </div> -->
+
+<footer>
+  <button type="button" class="btn-lg btn-warning" id="restart">Restart</button>
+</footer>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="./script/bootstrap.js"></script>

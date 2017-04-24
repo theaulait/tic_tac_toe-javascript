@@ -1,7 +1,53 @@
 body{
+  font-family: 'Lobster';
   background-color: #78ead3;
+  text-align: center;
 }
 
-#board{
+h1{
+  font-size: 75px;
+  color: white;
+  margin: 50px;
+}
+
+form{
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  color: gray;
+  background-color: #82B1FF;
+  display: inline-block;
+}
+
+.bttn{
+  border-color: grey;
+  border-width: 1px;
+  font-family: 'Lobster';
+  color: gray;
+  text-align: center;
   background-color: white;
+  font-size: 50px;
+  width: 125px;
+  height: 125px;
+  box-shadow: 0 4px rgba(0,0,0,0.2);
+}
+
+.bttn:hover {
+  background-color: #FFFF8D;
+  color:white;
+}
+
+.btn-lg{
+  font-size: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 25px;
+}
+
+.o{
+  font-size: 50px;
+}
+
+.x{
+  font-size: 50px;
 }
